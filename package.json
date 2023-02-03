@@ -26,7 +26,7 @@
     "@tweenjs/tween.js": "^18.6.0",
     "ammo.js": "github:kripken/ammo.js",
     "dat.gui": "^0.7.7",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "raw-loader": "^4.0.2",
     "stats.js": "^0.17.0",
     "three": "^0.117.1"
