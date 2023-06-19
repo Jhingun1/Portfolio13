@@ -1,89 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174941093-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+<html lang="en-US">
 
-      gtag('config', 'UA-174941093-1');
-    </script>
+<head>
 
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer','GTM-P437XK4');</script>
-      <!-- End Google Tag Manager -->
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	
+	<!-- SEO -->
+	<title>Casey Lau</title>
+	<meta name="description" content="Hi, my name is Casey Lau - welcome to my website" />
+	<meta name="robots" content="index, follow" />
+	<meta name="referrer" content="always" />
 
-      <link rel="icon" href="favicon.ico" />
-    <link rel="alternate" type="application/json+oembed" href="%PUBLIC_URL%/website-screenshot.png"/>
-    <meta property="og:title" content="Portfolio 2020" />
-    <meta property="og:description" content="Portfolio 2020"/>
-    <meta property="og:url" content="www.0xfloyd.com" />
-    <meta name="image" property="og:image" content="https://www.0xfloyd.com/website-screenshot.png"/>
+	<!-- Social & Open Graph -->
+	<meta property="og:title" content="CaseyLau.com" />
+	<meta property="og:description" content="Hi, my name is Casey Lau - welcome to my website" />
+	<meta property="og:url" content="https://demo.onepagelove.com/fullsingle-html/split/" />
+	<meta name="twitter:title" content="CaseyLau.com" >
+	<meta name="twitter:description" content="Hi, my name is Casey Lau - welcome to my website" />
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <title>Portfolio 2020</title>
-  </head>
-  <body id="document-body">
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P437XK4"
-      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-      <!-- End Google Tag Manager (noscript) -->
-    <div id="WEBGLcontainer"></div>
-    <div id="joystick-wrapper"></div>
-     <div class="fadeOutDiv preload-overlay" id="preload-overlay">
-      <div class="start-page-content-div fadeOutDiv">
-        <h1 class="postload start-page-text interactive-site-text fadeOutDiv">This is an interactive 3D site built with Three.js!</h1>
-        <h1 id="appDirections" class="start-page-text joystick-directions-text postload fadeOutDiv">Move the ball around with the arrow keys on the keyboard.</h1>
-        <button id="start-button" class="postload fadeOutDiv">EXPLORE</button>
-      </div>
-      <div class="trinity-rings-spinner preload">
-        <div class="circle preload"></div>
-        <div class="circle preload"></div>
-        <div class="circle preload"></div>
-      </div>
-    <div class="loading-text-div preload">Loading<span class="loader__dot">.</span><span class="loader__dot">.</span><span class="loader__dot">.</span></div>
-    <div id="tooltip"></div>
-    <script type="x-shader/x-vertex" id="vertexShader">
 
-      varying vec3 vWorldPosition;
 
-      void main() {
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="images/favicon.png" sizes="32x32">
 
-      	vec4 worldPosition = modelMatrix * vec4( position, 1.0 );
-      	vWorldPosition = worldPosition.xyz;
+	<!-- Styles -->
+	<link rel='stylesheet' href='assets/css/split.css' type='text/css' media='screen' />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
 
-      	gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
+</head>
 
-      }
-    </script>
+<body id="fullsingle" class="page-template-page-fullsingle-split">
 
-    <script type="x-shader/x-fragment" id="fragmentShader">
+<div class="fs-split">
 
-      uniform vec3 topColor;
-      uniform vec3 bottomColor;
-      uniform float offset;
-      uniform float exponent;
+	<!-- Image Side -->
+	<div class="split-image">
 
-      varying vec3 vWorldPosition;
+	</div>
 
-      void main() {
+	<!-- Content Side -->
+	<div class="split-content">
 
-      	float h = normalize( vWorldPosition + offset ).y;
-      	gl_FragColor = vec4( mix( bottomColor, topColor, max( pow( max( h, 0.0 ), exponent ), 0.0 ) ), 1.0 );
+		<div class="split-content-vertically-center">
+		
+			<div class="split-intro">
+				
+				<h1>/ / /</h1>
 
-      }
-    </script>
+				<span class="tagline">Hi, my name is Casey Lau <P>劉奇師</span>
 
-    <script src="build/app.bundle.js"></script>
-  </body>
+			</div>
+
+			<div class="split-bio">
+				
+
+
+<P><BR>I am a founder, angel investor, advisor, speaker, ecosystem builder, and <a href="https://leagueofcomicgeeks.com/people/23712/casey-lau/132602">comic book creator.</A>
+
+
+
+
+<P><BR>
+
+I co-host some of the biggest technology conferences in the world:  
+<P>
+- <a href="http://www.riseconf.com">RISE</A> in Asia<P>
+-  <a href="http://www.collisionconf.com">Collision</A> in North America<P>
+- <a href="http://www.websummit.com">Web Summit</A> in Europe<P>
+-  <a href="http://rio.websummit.com">Web Summit Rio</A> in Latin America<P>
+- <a href="http://www.websummit.com/qatar">Web Summit Qatar</A> in the Middle East.
+
+<P><BR>
+
+I co-founded StartupsHK - the largest community of tech founders in Hong Kong, that led to the birth of some of the biggest startups in Asia. That group has now evolved into <A HREF="https://www.hkgdao.io"><B>HKG DAO</B></A> - a DAO and community for Web3 startups, investors and builders based in Hong Kong and its disapora.
+<P><BR>
+
+I co-founded a digital storytelling agency called <A HREF="https://www.argonauta.media"><B>Argonauta</B></A>, focusing on video and audio content. My new technology-focused shows are "The GM Show," "Super Excited with Casey Lau" and "The Next Stage Sessions." 
+
+<P><BR>
+
+<P>Please reach out through one of my networks below.</p>
+
+			</div>
+
+			<div class="split-lists">
+				
+				<div class="split-list">
+
+					<h3>Connect</h3>
+
+					<ul>
+					
+						<li><a href="https://t.me/hypercasey">Telegram</a></li>
+						<li><a href="profiles.html">Profiles on me</a></li>
+						<li><a href="mailto:hi@caseylau.com">Email</a></li>
+					</ul>
+
+				</div>
+
+				<div class="split-list">
+
+					<h3>Social</h3>
+
+					<ul>
+						<li><a href="http://www.twitter.com/casey_lau">Twitter</a></li>
+						<li><a href="http://www.linkedin.com/in/caseylau/">LinkedIn</a></li>
+						<li><a href="https://www.instagram.com/caseylau_">Instagram</a></li>
+					</ul>
+
+				</div>
+
+				<div class="split-list">
+
+					<h3>Network</h3>
+
+					<ul>
+						<li><a href="https://www.hkgdao.io">HKG DAO</a></li>
+						<li><a href="http://www.argonauta.media">Argonauta</a></li>
+						<li><a href="http://www.riseconf.com">RISE</a></li>
+						
+					</ul>
+
+				</div>
+				
+			</div>
+
+			<div class="split-credit">
+
+				<p>&copy; 2023 The Lau Family Mysteries Ltd.</p>
+
+			
+			</div>		
+
+		</div>
+
+	</div>
+
+</div>
+
+</body>
 </html>
